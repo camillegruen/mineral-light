@@ -1,11 +1,11 @@
 [package]
 edition      = "2024"
-name         = "codecell-blink"
+name         = "mineral-light"
 rust-version = "1.88"
 version      = "0.1.0"
 
 [[bin]]
-name = "codecell-blink"
+name = "mineral-light"
 path = "./src/bin/main.rs"
 
 [dependencies]
@@ -18,8 +18,10 @@ esp-bootloader-esp-idf = { version = "0.5.0", features = ["esp32c6"] }
 critical-section = "1.2.0"
 smart-leds = "0.4.0"
 esp-hal-smartled = "0.18.0"
-esp-println = { version = "0.11.0", features = ["esp32c2"] }
+esp-println = { version = "0.11.0", features = ["esp32c6"] }
 
+nb = "1"
+libm = "0.2"
 
 # For fine tuning these settings, please refer to https://doc.rust-lang.org/cargo/reference/profiles.html
 [profile.dev]
