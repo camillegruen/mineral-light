@@ -71,20 +71,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 
 [[package]]
-name = "mineral-light"
-version = "0.1.0"
-dependencies = [
- "critical-section",
- "esp-bootloader-esp-idf",
- "esp-hal",
- "esp-hal-smartled",
- "esp-println",
- "libm",
- "nb 1.1.0",
- "smart-leds",
-]
-
-[[package]]
 name = "critical-section"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -602,6 +588,7 @@ checksum = "0d9dd4fc40306450e432cdf104ab00c8f6bd5c4f6c77b76c5fc3024c0e2a535d"
 dependencies = [
  "critical-section",
  "esp-build",
+ "log",
  "portable-atomic",
 ]
 
@@ -966,6 +953,20 @@ name = "memchr"
 version = "2.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98"
+
+[[package]]
+name = "mineral-light"
+version = "0.1.0"
+dependencies = [
+ "critical-section",
+ "esp-bootloader-esp-idf",
+ "esp-hal",
+ "esp-hal-smartled",
+ "esp-println",
+ "libm",
+ "nb 1.1.0",
+ "smart-leds",
+]
 
 [[package]]
 name = "nb"

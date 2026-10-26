@@ -10,15 +10,12 @@ path = "./src/bin/main.rs"
 
 [dependencies]
 esp-hal = { version = "1.1.1", features = ["esp32c6", "unstable"] }
-
-
-
 esp-bootloader-esp-idf = { version = "0.5.0", features = ["esp32c6"] }
 
 critical-section = "1.2.0"
 smart-leds = "0.4.0"
 esp-hal-smartled = "0.18.0"
-esp-println = { version = "0.11.0", features = ["esp32c6"] }
+esp-println = { version = "0.11.0", features = ["esp32c6", "log"] }
 
 nb = "1"
 libm = "0.2"
